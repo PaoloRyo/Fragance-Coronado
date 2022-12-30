@@ -18,18 +18,20 @@ body{
     height: 100%;
 }
 button{
-    font-size: 1rem;
+    font-size: 1.2rem;
     border-radius: 1rem;
     background-color: var(--black);
     color: aliceblue;
     padding: 1rem;
+    font-weight: 800;
     transition: all ease-out .5s;
     margin: 1rem 0;
 }
 button:hover{
     letter-spacing: .1rem;
     cursor: pointer;
-    background: var(--main-color);
+    font-weight: 800;
+    background: hsla(174, 49%, 69%, 0.844);
     color: #13131a;
 }
 
@@ -54,6 +56,10 @@ button:hover{
 }
 .header .navbar img{
     width:100%;
+    transition: all ease-out .5s;
+}
+.header .navbar img:hover{
+    transform: scale(1.1);
 }
 .navbar .icons{
     color: white;
@@ -126,6 +132,7 @@ button:hover{
     animation: cambio 16s infinite alternate ease-in-out;
     padding: 0;
     width: 400%;
+    
 }
 .home .content .slider ul li{
     list-style: none;
@@ -133,7 +140,8 @@ button:hover{
 }
 .home .content .slider img{
     width: 100%;
-    box-shadow: 2rem 1rem 1rem 2rem rgba(0, 0, 0, 0.2);
+    height: 95%;
+    box-shadow: 1rem 1rem 1rem 1rem rgba(0, 0, 0, 0.1);
 }
 @keyframes cambio {
     0% {margin-left: 0%;}
@@ -157,26 +165,41 @@ button:hover{
 }
 
 .home .contentProductOferta .box .imagen{
-    width: 60%;
+    width: 80%;
     margin: 0 auto;
+    
 }
 .home .contentProductOferta .box .imagen img{
     width: 100%;
+    transition: all ease-in-out 0.5s;
+    padding: 0.5rem;
+    
+}
+.home .contentProductOferta .box .imagen img:hover{
+    transform: scale(1.1);
 }
 .home .contentProductOferta .box__content .box .contenido h3{
-    font-size: 2rem;
-    color:aliceblue;
+    font-size: 1.5rem;
+    color:rgb(108, 222, 226);
+}
+.home .contentProductOferta .box__content .box {
+    border: 0.3rem solid hsla(176, 22%, 86%, 0.844);
+    border-radius: 2rem;
 }
 .home .contentProductOferta .box__content .box p{
-    font-size: 1.5rem;
+    font-size: 1rem;
+    text-align: justify;
     color:var(--black);
+    font-weight: 700;
 }
 .home .contentProductOferta .box__content .box h5{
     font-size: 1.5rem;
+    font-weight: 700;
 }
 .home .contentProductOferta .box__content .box h5 span{
     text-decoration: line-through;
-    font-size: 1rem;
+    font-size: 1.2rem;
+    font-weight: 700;
 }
 
 @media (max-width:840px) {
@@ -257,6 +280,9 @@ button:hover{
     .home .contentProductOferta .box__content .box h5 span{
         font-size: 1rem;
     }
+    button{
+        font-size: 0.8rem;
+    }
 }
 /*---------home--------------*/
 
@@ -285,13 +311,17 @@ button:hover{
     background-color: var(--black);
 }
 .nosotros .contenedor__nosotros .contenedor .image{
-    flex:1 1 35rem;
+    flex:1 1 30rem;
+    padding: 2rem;
 }
 .nosotros .contenedor__nosotros .contenedor .image img{
     width: 100%;
+    transition: all ease-in-out 0.5s;
 }
+.nosotros .contenedor__nosotros .contenedor .image img:hover{
+    transform: scale(1.05);}
 .nosotros .contenedor__nosotros .contenedor .contenedor__texto{
-    flex:1 1 35rem;
+    flex:1 1 40rem;
 }
 .nosotros .contenedor__nosotros .contenedor .contenedor__texto p{
     font-size: 1.2rem;
@@ -315,14 +345,18 @@ button:hover{
     flex-wrap: wrap;
     align-items: center;
     justify-content:center;
-    gap: 2rem;
+    gap: 3rem;
 }
 .nosotros .contenedor__box .contenedor__mv .mision{
     max-width: 30rem;
     min-width: 15rem;
-    border: 0.2rem solid var(--main-color);
+    border: 0.3rem solid hsla(176, 22%, 86%, 0.844);
     border-radius: 2rem;
     padding: 1rem;
+    transition: all ease-in-out 0.5s;
+}
+.nosotros .contenedor__box .contenedor__mv .mision:hover{
+    transform: scale(1.1);
 }
 .nosotros .contenedor__box .contenedor__mv .mision .contenedor__mision {
     display: flex;
@@ -334,31 +368,32 @@ button:hover{
     max-width: 30rem;
     min-width: 10rem;
     padding: 0.5rem;
-
 }
 .nosotros .contenedor__box .contenedor__mv .mision .contenedor__mision .image img{
     width: 100%;
     border-radius: 1rem;
 }
-.nosotros .contenedor__box .contenedor__mv .mision .contenedor__mision .texto{
-    padding: 0.5rem;
-}
 
 .nosotros .contenedor__box .contenedor__mv .mision .contenedor__mision h4{
     font-size: 2rem;
-    color: aliceblue;
+    color: rgb(108, 222, 226);
 }
 .nosotros .contenedor__box .contenedor__mv .mision p{
     font-size: 1.3rem;
     padding: 1rem;
     text-align: justify;
+    font-weight: 800;
 }
 .nosotros .contenedor__box .contenedor__mv .vision{
     max-width: 30rem;
     min-width: 15rem;
-    border: 0.2rem solid var(--main-color);
+    border: 0.3rem solid hsla(176, 22%, 86%, 0.844) ;
     border-radius: 2rem;
     padding: 1rem;
+    transition: all ease-in-out 0.5s;
+}
+.nosotros .contenedor__box .contenedor__mv .vision:hover {
+    transform: scale(1.1);
 }
 .nosotros .contenedor__box .contenedor__mv .vision .contenedor__vision .image{
     max-width: 30rem;
@@ -376,17 +411,16 @@ button:hover{
     gap: 2rem;
 
 }
-.nosotros .contenedor__box .contenedor__mv .vision .contenedor__vision .texto{
-    padding: 0.5rem;
-}
+
 .nosotros .contenedor__box .contenedor__mv .vision .contenedor__vision h4{
     font-size: 2rem;
-    color: aliceblue;
+    color: rgb(108, 222, 226);
 }
 .nosotros .contenedor__box .contenedor__mv .vision p{
     font-size: 1.3rem;
     padding: 1rem;
     text-align: justify;
+    font-weight: 800;
 }
 @media (max-width:840px) {
     .nosotros{
@@ -469,9 +503,11 @@ button:hover{
     gap: 2rem;
 }
 .productos .container__productos .producto{
-    border: 0.2rem solid var(--main-color);
+    border: 0.3rem solid hsla(176, 22%, 86%, 0.844) ;
+    border-radius: 2rem;
     max-width:22rem;
     min-width: 10rem;
+    height: auto;
 }   
 .productos .container__productos .producto .imagen{
     width: 70%;
@@ -480,13 +516,18 @@ button:hover{
 .productos .container__productos .producto .imagen img{
     width: 100%;
     border-radius: 1rem;
+    transition: all ease-in-out 0.5s;
+}
+.productos .container__productos .producto .imagen img:hover{
+    transform: scale(1.1);
 }
 .productos .container__productos .producto .contenido h3{
     font-size: 1.5rem;
-    color:aliceblue;
+    color: rgb(108, 222, 226);
 }
 .productos .container__productos .producto .contenido p{
     font-size: 1rem;
+    font-weight: 500;
     color:var(--black);
     text-align: justify;
 }
@@ -739,15 +780,15 @@ button:hover{
 
 .footer .footer__box .contenido__footer{
     color:aliceblue;
-    font-size: 1rem;
-    padding: 2rem;
+    font-size: 1.5rem;
+    padding: 1rem;
 }
 .footer .footer__box .contenido__footer span{
     color: var(--main-color);
 }
 .footer .footer__box .icono__footer{
     font-size: 2rem;
-    padding: 2rem;
+    padding: 1rem;
 }
 .footer .footer__box .icono__footer a i{
     color:aliceblue;
@@ -761,8 +802,8 @@ button:hover{
 
 .footer .footer__box .numero{
     color:aliceblue;
-    padding: 2rem;
-    font-size: 1rem;
+    padding: 1rem;
+    font-size: 1.5rem;
 }
 
 /*--------footer-------------*/
