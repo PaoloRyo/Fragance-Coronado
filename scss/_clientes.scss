@@ -1,0 +1,143 @@
+.contenedor__cliente{
+    padding-top: 1rem;
+    margin-bottom: 2rem;
+    width: 100%;
+    min-height: 100vh;
+    .box {
+            h2{
+            color:  $texto;
+            margin-top:8rem ;
+            text-align: center;
+            font-size: 3rem;
+            span{
+                color:$main-color;
+            }
+        }
+        .contenedor{
+            margin: 3rem;
+            text-align: center ;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            background-color: $black;
+            .image{
+                flex: 1 1 35rem;
+                img{
+                    width: 100%; 
+                }
+            }
+            .contenedor__texto{
+                flex: 1 1 35rem;
+                p{
+                    font-size: 1.2rem;
+                    padding: 2rem;
+                    text-align: justify;
+                    color: $texto;
+                }
+            }
+        }
+    }
+    .box_clientes
+        { 
+            h2{
+            color:  $texto;
+            margin-bottom: 2rem;
+            text-align: center;
+            font-size: 3rem;
+            span{
+                color:$main-color;
+            }
+        }
+        .testimonios__clientes {
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: center;
+            .testimonios{
+                max-width: 30rem;
+                min-width: 15rem;
+                margin: 1rem 2.5rem;
+                text-align: center;
+                padding: 1.5rem;
+                gap: 2rem;
+                border: 0.2rem solid $main-color;
+                background-color: $black;
+                opacity: 0.6;
+                transition: all ease-out .5s;
+                &:hover{
+                    transform: scale(1.1);
+                }
+                .imagen{
+                    max-width: 10rem;
+                    min-width: 5rem;
+                    margin: 0 auto;
+                    img{
+                        width: 100%;
+                        border-radius: 50%;
+                        border: 0.2rem solid $main-color;
+                    }
+                }
+                h3{
+                    color: #6f75be;
+                    font-size: 1.8rem;
+                    padding: 1rem 0;
+                }
+                p{
+                    color:  $texto;
+                    font-size: 1rem;
+                    padding-bottom: 1rem;
+                }
+                .iconos i{
+                    color: yellow;
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width:840px) {
+    .contenedor__cliente .box h2{
+        margin-top: 5rem;
+}}
+@media (max-width:500px) {
+    .contenedor__cliente {
+        .box 
+        {
+            h2{
+                font-size: 2.2rem;
+            }
+            .contenedor{
+                margin: 2rem 0;
+            }
+            .contenedor .contenedor__texto p{
+                font-size: 0.8rem;
+            }
+        }
+        .box_clientes
+        {
+            h2{
+            font-size:2rem;
+            padding: 2rem;
+            }
+            .testimonios__clientes {
+                width: 100%;
+                .testimonios{
+                    margin: 1rem;
+                    h3{
+                        font-size: 1.2rem;
+                    }
+                    .testimonios p{
+                        font-size: 0.7rem;
+                    }
+                    .iconos i{
+                        font-size: 0.7rem;
+                    }
+                }
+            }
+        }
+    }
+}

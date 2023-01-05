@@ -1,0 +1,174 @@
+.home{
+    margin-top: 2rem;
+    min-height: 100vh;
+    .content {
+        h3{
+        color:  $texto;
+        margin-top: 6rem ;
+        margin-bottom: 2rem;
+        font-size: 3rem;
+            span{
+                color: $main-color;
+            }
+        }
+        .slider{
+            max-width: 1000px;
+            min-width: 285px;
+            height: auto;
+            margin: 0 auto;
+            overflow: hidden;
+            ul{
+                animation: cambio 16s infinite alternate ease-in-out;
+                padding: 0;
+                width: 400%;
+                li{
+                    list-style: none;
+                    width: 100%;
+                }
+            }
+            img{
+                width: 100%;
+                height: 95%;
+                box-shadow: 1rem 1rem 1rem 1rem rgba(0, 0, 0, 0.1);
+            }
+        }
+    }
+    .contentProductOferta 
+    {   
+        h2{
+        font-size: 3rem;
+        color:  $texto;
+            span{
+                color: $main-color;
+            }
+        }
+        .box__content .box {
+            border: 0.3rem solid $border;
+            border-radius: 2rem;
+            .imagen{
+                width: 80%;
+                margin: 0 auto;
+                img{
+                    width: 100%;
+                    transition: all ease-in-out 0.5s;
+                    padding: 0.5rem;
+                    &:hover{
+                        transform: scale(1.1);
+                    }
+                }
+            }
+            .contenido h3{
+                font-size: 1.5rem;
+                color:rgb(108, 222, 226);
+            }
+            p{
+                font-size: 1rem;
+                text-align: justify;
+                color:$black;
+                font-weight: 700;
+            }
+            h5{
+                font-size: 1.5rem;
+                font-weight: 700;
+                span{
+                    text-decoration: line-through;
+                    font-size: 1.2rem;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+}
+
+@keyframes cambio {
+    0% {margin-left: 0%;}
+    20% {margin-left: 0%;}
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+    75% {margin-left: -300%;}
+    100% {margin-left: -300%;}
+}       
+
+@media (max-width:840px) {
+    
+    .navbar ul li a{
+        font-size: 1rem;
+    }
+    .navbar .icons{
+        font-size: 1rem;
+    }
+    .navbar a{
+        width:4rem;
+    }
+    .home .content h3{
+        margin-top: 3rem ;
+        font-size: 2rem;
+    }
+    .home .contentProductOferta h2{
+        font-size: 2rem;
+    }
+
+}
+@media (max-width:628px) {
+
+    .navbar ul {
+        position: fixed;
+        top:-1000px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+        background:$bg;
+        opacity: 0.9;
+        transition: 1s;
+            li {
+            padding: 2rem;
+            width: 100%;
+            a{
+                font-size: 2rem;
+            }
+        }
+    }
+
+    .navbar .fa-bars{
+        display: inline-block;
+        color:  $texto;
+        font-size: 1rem;
+        cursor: pointer;
+        position: absolute;
+        right: 0.5rem;
+        padding-right: 0.5rem;
+        &:hover + ul{
+            top:60px;
+        }
+    }
+    .navbar ul:hover{
+        top:60px;
+    }
+    .navbar .icons{
+        position: absolute;
+        right: 1.5rem;
+    }
+
+}
+@media (max-width:400px) {
+
+    .home .contentProductOferta .box__content .box .contenido h3{
+        font-size: 1rem;
+    }
+    .home .contentProductOferta .box__content .box p{
+        font-size: 1rem;
+    }
+    .home .contentProductOferta .box__content .box h5{
+        font-size: 1rem;
+    }
+    .home .contentProductOferta .box__content .box h5 span{
+        font-size: 1rem;
+    }
+    button{
+        font-size: 0.8rem;
+    }
+}

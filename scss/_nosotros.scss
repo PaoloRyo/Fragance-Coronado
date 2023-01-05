@@ -1,0 +1,206 @@
+.nosotros{
+    padding-top: 1rem;
+    margin-top: 8rem;
+    min-height: 100vh;
+    .contenedor__nosotros {
+        h2{
+            color:  $texto;
+            text-align: center;
+            font-size: 3rem;
+            padding: 0 1rem;
+            span{
+                color:$main-color;
+            }
+        }
+        .contenedor{
+            margin: 3rem;
+            text-align: center ;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            background-color: $black;
+            .image{
+                flex:1 1 30rem;
+                padding: 2rem;
+                img{
+                    width: 100%;
+                    transition: all ease-in-out 0.5s;
+                    &:hover{
+                        transform: scale(1.05);}
+                }
+            }
+            .contenedor__texto{
+                flex:1 1 40rem;
+                p{
+                    font-size: 1.2rem;
+                    padding: 2rem;
+                    text-align: justify;
+                    color: $texto;
+                }
+            }
+        }
+    }
+    .contenedor__box 
+    {   
+        h3{
+            color:  $texto;
+            margin-bottom: 3rem;
+            text-align: center;
+            font-size: 3rem;
+            span{
+                color:$main-color;
+            }
+        }
+        .contenedor__mv{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content:center;
+            gap: 3rem;
+            .mision{
+                max-width: 30rem;
+                min-width: 15rem;
+                border: 0.3rem solid $border;;
+                border-radius: 2rem;
+                padding: 1rem;
+                transition: all ease-in-out 0.5s;
+                &:hover{
+                    transform: scale(1.1);
+                }
+                .contenedor__mision {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 2rem;
+                    .image{
+                        max-width: 30rem;
+                        min-width: 10rem;
+                        padding: 0.5rem;
+                        img{
+                            width: 100%;
+                            border-radius: 1rem;
+                        }
+                    }
+                    h4{
+                        font-size: 2rem;
+                        color: $titulo;;
+                    }
+                }
+                p{
+                    font-size: 1.3rem;
+                    padding: 1rem;
+                    text-align: justify;
+                    font-weight: 800;
+                }
+            }
+            .vision{
+                max-width: 30rem;
+                min-width: 15rem;
+                border: 0.3rem solid $border;;
+                border-radius: 2rem;
+                padding: 1rem;
+                transition: all ease-in-out 0.5s;
+                &:hover {
+                    transform: scale(1.1);
+                }
+                .contenedor__vision .image{
+                    max-width: 30rem;
+                    min-width: 10rem;
+                    padding: 0.5rem;
+                    img{
+                        width: 100%;
+                        border-radius: 1rem;
+                    }
+                }
+                .contenedor__vision {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 2rem;
+                    h4{
+                        font-size: 2rem;
+                        color: $titulo;;
+                    }
+                }
+                p{
+                    font-size: 1.3rem;
+                    padding: 1rem;
+                    text-align: justify;
+                    font-weight: 800;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width:840px) {
+    .nosotros{
+        margin-top: 5rem;
+        .contenedor__nosotros h2{
+            font-size: 2.5rem;
+        }
+        .contenedor__box h3{ 
+            font-size: 2.5rem;
+        }
+    }
+}
+
+@media (max-width:500px) {
+
+    .nosotros 
+    {
+        .contenedor__nosotros 
+        {
+            .contenedor{
+            margin: 2rem 0;
+                .contenedor__texto p{
+                    font-size: 0.7rem;
+                }
+            }
+            h2{
+                font-size: 2rem;
+            }
+        }
+        .contenedor__box {
+            h3{ 
+                font-size: 2rem;
+            }
+            .contenedor__mv .mision 
+            {
+                .contenedor__mision {
+                    display: flex;
+                    flex-direction:column-reverse;
+                    .texto{
+                        display: flex;
+                        gap: 0.5rem;
+                    }
+                    h4{
+                        font-size: 1.5rem;
+                    }
+                }
+                p{
+                    font-size:0.9rem;
+                }
+            }
+            .contenedor__mv .vision{
+                display: flex;
+                flex-direction: column-reverse;
+                .contenedor__vision {
+                    display: flex;
+                    flex-direction: column-reverse;
+                    .texto{
+                        display: flex;
+                        gap: 0.5rem;
+                    }
+                    h4{
+                        font-size: 1.5rem;
+                    }
+                }
+            p{
+                font-size:0.9rem;
+            }
+        }
+    }
+    }}

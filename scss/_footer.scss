@@ -1,0 +1,59 @@
+.footer {
+    margin-top: 2rem;
+    background: $bg;
+    width: 100%;
+    .footer__box{
+
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+}
+
+@media (max-width:500px) {
+
+    .contacto > h3{
+        padding: 1rem;
+        margin-top:5rem ;
+        font-size: 1.8rem;
+    }
+    .contacto .conteiner__contacto {
+
+        margin: 0 ; 
+        padding: 1rem 0;
+
+    }
+}
+
+
+
+.footer .footer__box 
+    {
+    .contenido__footer{
+        color: $texto;
+        font-size: 1.5rem;
+        padding: 1rem;
+        span{
+            color: $main-color;
+        }
+    }
+    .icono__footer{
+        font-size: 2rem;
+        padding: 1rem;
+        a i{
+            color: $texto;
+            padding: 1rem;
+            &:hover{ 
+                color:$main-color;
+                transform: scale(1.5);
+            }
+        }
+    }
+    .numero{
+        color: $texto;
+        padding: 1rem;
+        font-size: 1.5rem;
+    }
+}
